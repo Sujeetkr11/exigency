@@ -1,0 +1,19 @@
+<ion-view>
+    <ion-content>
+        <div id="map" data-tap-disabled="true"></div>
+          <nav mfb-menu position="bl" effect="zoomin"  active-icon="ion-edit"
+             resting-icon="ion-plus-round" toggling-method="click"
+               class="app-menu"
+               menu-state="menuState" ng-class="{'fadeOut' : menuState === 'closed'}">
+            <button mfb-button label="Add Contacts" icon="ion-person-add"></button>
+            <button mfb-button label="First Aid" icon="ion-ios-medkit"></button>
+            <button mfb-button label="SMS for Help" icon="ion-android-textsms" ng-click="sendsms()"></button>
+          </nav>
+
+      <div id="listing">
+              <table id="resultsTable">
+                <tbody id="results"></tbody>
+              </table>
+      </div>
+    </ion-content>
+</ion-view>

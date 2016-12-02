@@ -1,0 +1,35 @@
+<ion-view style="" class=" " id="page6" title="Signup">
+    <ion-content class="has-header" padding="true" style="background: url(img/em.jpg) center; background-size: cover;">
+        <form name="signupForm" class="list " id="signup-form2">
+            <ion-list class=" " id="signup-list3">
+
+			   <div class="app-icon"></div>
+
+              <label class="item item-input item-floating-label">
+                <span style="color: white;"  class="input-label">Name</span>
+                <input style="color: white;" ng-model="user.name" type="text" placeholder="Name">
+              </label>
+
+              <label class="item item-input item-floating-label">
+                <span style="color: white;" class="input-label">Phone</span>
+                <input style="color: white;" ng-model="user.phone" type="tel" placeholder="Phone">
+              </label>
+
+              <label class="item item-input item-floating-label">
+                  <span style="color: white;" class="input-label">Email</span>
+                  <input style="color: white;" ng-model="user.email" type="email" placeholder="Email">
+              </label>
+
+              <label class="item item-input item-floating-label">
+                  <span style="color: white;" class="input-label">Password</span>
+                  <input style="color: white;" ng-model="user.password" type="password" placeholder="Password">
+              </label>
+
+
+            </ion-list>
+            <div style="width: 279px; height: 35px;" class="spacer"></div>
+            <button ng-click="signupEmail(signupForm,user)" class=" button button-assertive  button-block  icon-left ion-ios-email-outline " style="border-radius:0px 0px 0px 0px;" id="signup-button3">SIGN UP WITH YOUR EMAIL</button>
+            <button class=" button button-positive  button-block icon-left ion-social-facebook " style="border-radius:0px 0px 0px 0px;" id="signup-button4">SIGN UP WITH FACEBOOK</button>
+        </form>
+    </ion-content>
+</ion-view>
